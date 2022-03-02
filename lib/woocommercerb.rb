@@ -1,0 +1,1 @@
+require "woo_commerce"
