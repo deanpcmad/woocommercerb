@@ -17,6 +17,10 @@ module WooCommerce
       CouponsResource.new(self)
     end
 
+    def customers
+      CustomersResource.new(self)
+    end
+
     def orders
       OrdersResource.new(self)
     end

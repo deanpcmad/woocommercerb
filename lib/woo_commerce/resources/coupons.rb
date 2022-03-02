@@ -20,7 +20,8 @@ module WooCommerce
     end
 
     def delete(id:)
-      delete_request("coupons/#{id}")
+      response = delete_request("coupons/#{id}", params: {force: true})
+      return true if response.success?
     end
 
   end
