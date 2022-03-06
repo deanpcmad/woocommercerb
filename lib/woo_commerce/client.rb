@@ -29,6 +29,10 @@ module WooCommerce
       ProductsResource.new(self)
     end
 
+    def product_categories
+      ProductCategoriesResource.new(self)
+    end
+
     def connection
       @connection ||= Faraday.new("#{url}/wp-json/wc/v3") do |conn|
         conn.request :authorization, :basic, api_key, api_secret
