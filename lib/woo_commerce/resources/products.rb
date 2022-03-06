@@ -10,8 +10,8 @@ module WooCommerce
       Product.new get_request("products/#{id}").body
     end
 
-    def create(email:, **params)
-      attributes = {email: email}
+    def create(name:, **params)
+      attributes = {name: name}
       Product.new post_request("products", body: attributes.merge(params)).body
     end
 

@@ -25,6 +25,10 @@ module WooCommerce
       OrdersResource.new(self)
     end
 
+    def order_notes
+      OrderNotesResource.new(self)
+    end
+
     def products
       ProductsResource.new(self)
     end
