@@ -33,6 +33,10 @@ module WooCommerce
       ProductsResource.new(self)
     end
 
+    def product_variations
+      ProductVariationsResource.new(self)
+    end
+
     def product_categories
       ProductCategoriesResource.new(self)
     end

@@ -16,6 +16,7 @@ module WooCommerce
   autoload :OrderNotesResource, "woo_commerce/resources/order_notes"
   autoload :ProductsResource, "woo_commerce/resources/products"
   autoload :ProductCategoriesResource, "woo_commerce/resources/product_categories"
+  autoload :ProductVariationsResource, "woo_commerce/resources/product_variations"
 
   autoload :Coupon, "woo_commerce/objects/coupon"
   autoload :Customer, "woo_commerce/objects/customer"
@@ -23,5 +24,6 @@ module WooCommerce
   autoload :OrderNote, "woo_commerce/objects/order_note"
   autoload :Product, "woo_commerce/objects/product"
   autoload :ProductCategory, "woo_commerce/objects/product_category"
+  autoload :ProductVariation, "woo_commerce/objects/product_variation"
 
 end
